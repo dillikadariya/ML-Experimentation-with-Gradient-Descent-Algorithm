@@ -55,10 +55,13 @@ def train_model_dynamic_lr(X, y, w, alpha=0.01, num_iter=100, decay=0.001, decay
     loss_values = []
 
     for it in range(num_iter):
+        # Make Predictions for the Entire Batch
         y_hat = get_predictions(X, w)
+        
+        # Calculate Error for Each Observation
+        error = y - y_hat 
 
         # Compute gradients using results from partial derivatives of mse (loss function) with respect to w0 and w1
-        error = y - y_hat
         grad_w0 = -2 * np.mean(error)  # Mean gradient for bias
         grad_w1 = -2 * np.mean(error * X)  # Mean gradient for slope
 
@@ -70,7 +73,7 @@ def train_model_dynamic_lr(X, y, w, alpha=0.01, num_iter=100, decay=0.001, decay
         w[0] -= alpha * grad_w0
         w[1] -= alpha * grad_w1
 
-        # Calculate and store MSE
+        # Calculate and Store MSE for the Entire Batch
         mse = get_mean_squared_error(y, get_predictions(X, w))
         loss_values.append(mse)
         print(f"Iteration {it + 1}: MSE = {mse:.4f}, Learning Rate = {alpha:.6f}, w = {w}")
