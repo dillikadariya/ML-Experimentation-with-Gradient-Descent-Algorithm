@@ -1,10 +1,10 @@
-# Project 1: Linear Regression with Dynamic Learning Rate
+# Prject Title: Linear Regression with Dynamic Learning Rate
 
-This project demonstrates batch gradient descent with a dynamic learning rate to fit a simple linear regression model.
+This project demonstrates batch gradient descent and experiment with different values of fixed and dynamic learning rate to fit a simple linear regression model.
 
 ## Objectives
 - Understand batch gradient descent optimization.
-- Implement a dynamic learning rate for smoother convergence.
+- Implement fixed and a dynamic learning rate to compare for a smoother convergence.
 - Visualize model performance and training loss.
 
 ## Dataset
@@ -16,4 +16,6 @@ Synthetic data generated using a linear relationship with noise.
 - Dynamically adjust the learning rate for efficient training.
 
 ## Results
-The model successfully fits a linear trend with minimized MSE.
+The model successfully fits a linear trend with minimized MSE. Based on my testing, if the same optimal alpha is chosen for both fixed and dynamic learning
+rate algorithms, there isn’t a substantial difference in the performance of these algorithms. This conclusion is limited by my finite testing of these algorithms.
+
