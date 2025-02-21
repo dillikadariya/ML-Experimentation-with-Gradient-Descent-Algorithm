@@ -16,6 +16,6 @@ Synthetic data generated using a linear relationship with noise.
 - Dynamically adjust the learning rate for efficient training.
 
 ## Results
-The model successfully fits a linear trend with minimized MSE. Based on my testing, if the same optimal alpha is chosen for both fixed and dynamic learning
-rate algorithms, there isn’t a substantial difference in the performance of these algorithms. This conclusion is limited by my finite testing of these algorithms.
+The model successfully fits a linear trend with minimized MSE. Based on the testing results, if the same optimal alpha(learning rate) value is chosen for both fixed and dynamic learning
+rate algorithms, there isn’t a substantial difference in the performance of the algorithm. This conclusion is limited by my finite testing.
 
