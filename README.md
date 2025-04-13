@@ -1,4 +1,4 @@
-# Prject Title: Linear Regression with Dynamic Learning Rate
+# Project Title: Linear Regression with Dynamic Learning Rate
 
 This project demonstrates batch gradient descent and experiment with different values of fixed and dynamic learning rate to fit a simple linear regression model.
 
